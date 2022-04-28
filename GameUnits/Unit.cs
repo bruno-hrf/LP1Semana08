@@ -2,11 +2,21 @@
 
 namespace GameUnits
 {
-    class Program
+    class Unit
     {
-        static void Main(string[] args)
+        private int movement;
+        public int health { get; set; }
+
+        public Unit (int movement, int health)
         {
-            Console.WriteLine("Hello World!");
+            this.movement = movement;
+            this.health = health;
         }
+
+        public virtual void Move ( Vector2 v )
+        {
+
+        }
+
     }
 }
